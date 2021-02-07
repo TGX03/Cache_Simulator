@@ -126,7 +126,7 @@ public class SetAssociate implements Cache {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
+        StringBuilder builder = new StringBuilder(Long.toHexString(Long.MAX_VALUE).length() * sets.length * sets[0].length * 2);
         for (int i = 0; i < sets.length; i++) {
             builder.append("Set ").append(i).append(":").append("\t");
         }

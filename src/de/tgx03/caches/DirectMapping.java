@@ -75,7 +75,7 @@ public class DirectMapping implements Cache{
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
+        StringBuilder builder = new StringBuilder(Long.toHexString(Long.MAX_VALUE).length() * lines.length * 2);
         builder.append("[ ");
         for (int i = 0; i < lines.length; i++) {
             long start = lines[i];
